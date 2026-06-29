@@ -38,7 +38,7 @@ export const submitPayment = async (paymentData: PaymentRequest): Promise<Paymen
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(paymentData),
+      body: paymentData,
     });
 
     if (!response.ok) {
