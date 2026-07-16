@@ -1,0 +1,38 @@
+@import ../../styles/helpers
+
+.container
+    position: relative
+    display: flex
+    padding-left: 396px
+    +x
+        padding-left: 360px
+    +d
+        padding-left: 148px
+
+.users
+    position: fixed
+    top: 88px
+    left: 0
+    bottom: 0
+    width: 396px
+    +x
+        width: 360px
+    +d
+        width: 148px
+    +m
+        top: 112px
+        width: 100%
+
+.messages
+    flex-grow: 1
+
+.location
+    flex-shrink: 0
+    width: 496px
+    +x
+        width: 364px
+    +t
+        display: none
+
+
+

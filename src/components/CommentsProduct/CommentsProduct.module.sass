@@ -1,0 +1,72 @@
+@import ../../styles/helpers
+
+.container
+    display: flex
+    align-items: flex-start
+    +t
+        flex-direction: column-reverse
+
+.profile
+    flex-shrink: 0
+    width: 343px
+    +t
+        width: auto
+        margin-top: 64px
+    +m
+        margin: 64px -16px 0
+
+.line
+    display: flex
+    justify-content: center
+
+.avatar
+    position: relative
+    flex-shrink: 0
+    width: 64px
+    height: 64px
+    margin-right: 24px
+    img
+        width: 100%
+        height: 100%
+        border-radius: 50%
+        object-fit: cover
+
+.check
+    position: absolute
+    top: 0
+    right: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 24px
+    height: 24px
+    border-radius: 50%
+    background: $p4
+    svg
+        fill: $n8
+    
+.man
+    +dm-sans
+    font-size: 32px
+    line-height: (40/32)
+    letter-spacing: -.01em
+
+.rating
+    display: flex
+    align-items: center
+    svg
+        margin-right: 8px
+        fill: $s3
+    
+.number
+    font-weight: 500
+
+.reviews
+    margin-left: 8px
+    color: $n4
+
+.wrapper
+    flex-grow: 1
+    padding: 40px 0 0 48px
+    +t
+        padding: 0

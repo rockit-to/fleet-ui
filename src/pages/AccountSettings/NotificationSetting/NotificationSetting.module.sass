@@ -1,0 +1,43 @@
+@import ../../../styles/helpers
+
+.title
+    margin-bottom: 64px
+    +m
+        margin-bottom: 32px
+        font-size: 32px
+
+.box
+    &:not(:last-child)
+        margin-bottom: 64px
+        padding-bottom: 64px
+        border-bottom: 1px solid $n6
+        +dark
+            border-color: $n3
+
+.category
+    margin-bottom: 16px
+    +body-bold-1
+
+.item
+    &:not(:last-child)
+        margin-bottom: 24px
+        padding-bottom: 24px
+        border-bottom: 1px solid $n6
+        +dark
+            border-color: $n3
+
+.head
+    display: flex
+    margin-bottom: 4px
+
+.subtitle
+    margin-right: auto
+    +body-bold-2
+
+.switch
+    flex-shrink: 0
+    margin-left: 24px
+
+.content
+    +caption-2
+    color: $n4

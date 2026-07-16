@@ -1,0 +1,60 @@
+@import ../../../styles/helpers
+
+.users
+    padding: 105px 0 0
+    box-shadow: inset -1px 0 0 0 $n6
+    +x
+        padding-top: 80px
+    +dark
+        box-shadow: inset -1px 0 0 0 $n3
+
+.toggle
+    position: absolute
+    top: 48px
+    left: 48px
+    display: flex
+    align-items: center
+    +body-bold-1
+    color: $n2
+    transition: color .2s
+    +x
+        top: 24px
+        left: 32px
+    +d
+        left: 50%
+        transform: translateX(-50%)
+        font-size: 0
+    +m
+        left: 32px
+        transform: translateX(0)
+        font-size: 24px
+    svg
+        margin-right: 8px
+        transition: fill .2s
+        +d
+            margin-right: 0
+        +m
+            margin-right: 8px
+    +dark
+        color: $n8
+        svg
+            fill: $n8
+    &:hover
+        color: $p1
+        svg
+            fill: $p1
+
+.list
+    max-height: 100%
+    padding: 0 48px 48px
+    overflow: auto
+    -webkit-overflow-scrolling: touch
+    +x
+        padding: 0 32px 32px
+    +d
+        display: flex
+        align-items: center
+        flex-direction: column
+    +m
+        display: block
+        padding: 0 32px 32px

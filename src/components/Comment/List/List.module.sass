@@ -1,0 +1,91 @@
+@import ../../../styles/helpers
+
+.title
+    margin-right: auto
+    +body-bold-1
+
+.head
+    display: flex
+    align-items: center
+    margin-bottom: 32px
+    +m
+        display: none
+    .dropdown
+        width: 160px
+
+.item
+    display: flex
+    align-items: flex-start
+    padding-bottom: 24px
+    border-bottom: 1px solid $n6
+    +dark
+        border-color: $n3
+    &:not(:last-child)
+        margin-bottom: 24px
+
+.avatar
+    flex-shrink: 0
+    width: 48px
+    height: 48px
+    margin-right: 20px
+    +m
+        margin-right: 14px
+    img
+        width: 100%
+        height: 100%
+        border-radius: 50%
+        object-fit: cover
+    
+.details
+    flex-grow: 1
+
+.top
+    display: flex
+    margin-bottom: 4px
+
+.author
+    margin-right: auto
+    font-weight: 500
+
+.rating
+    position: relative
+    top: -2px
+    margin-left: 8px
+    flex-shrink: 0
+
+.content
+    margin-bottom: 8px
+    color: $n3
+    +dark
+        color: $n5
+
+.time
+    +caption-2
+    color: $n4
+
+.foot
+    display: flex
+    align-items: center
+
+.actions
+    display: flex
+
+.action
+    margin-left: 16px
+    +poppins
+    +caption-bold-2
+    transition: color .2s
+    +dark
+        color: $n8
+    &:hover
+        color: $p1
+
+.btns
+    margin-top: 32px
+    text-align: center
+
+.button
+    .loader
+        margin: 0 16px 0 5px
+        transform: scale(.8)
+    

@@ -1,0 +1,91 @@
+// common styles
+html, body
+    min-width: 375px
+    // A direct browser window paints its own white canvas by default, but an
+    // embedded preview can show its host's dark canvas through a transparent
+    // document. Set the light canvas explicitly so toggling off dark mode is
+    // identical in both contexts.
+    background: $n8
+    +poppins
+    font-size: 14px
+    line-height: (24/14)
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    color: $n2
+    scrollbar-width: thin
+    scrollbar-color: #d1d4da transparent
+    &::-webkit-scrollbar,
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-track-piece,
+    &::-webkit-scrollbar-corner,
+    &::-webkit-scrollbar-button
+        background: transparent
+        background-color: transparent
+        border: none
+        box-shadow: none
+        min-height: 0
+        min-width: 0
+    &::-webkit-scrollbar
+        width: 6px
+        height: 6px
+    &::-webkit-scrollbar-thumb
+        background: #23262c
+        border-radius: 8px
+        border: none
+        box-shadow: none
+        &:hover
+            background: $n5
+    +dark-body
+        background: $n1
+        color: $n8
+        scrollbar-color: #23262c transparent
+        &::-webkit-scrollbar-thumb
+            background: $n3
+            &:hover
+                background: $n4
+
+// use-dark-mode only adds the "dark-mode" class to <body>, but the page
+// scrollbar belongs to <html>, so its color needs its own override
+html:has(body.dark-mode)
+    scrollbar-color: #23262c transparent
+    &::-webkit-scrollbar-thumb
+        background: $n3
+        &:hover
+            background: $n4
+
+a
+    text-decoration: none
+
+svg,
+img
+    vertical-align: middle
+
+.desktop
+    &-hide
+        +d
+            display: none !important
+    &-show
+        display: none !important
+        +d
+            display: block !important
+    &-text-right
+        +d
+            text-align: right
+
+.tablet
+    &-hide
+        +t
+            display: none !important
+    &-show
+        display: none !important
+        +t
+            display: block !important
+            
+.mobile
+    &-hide
+        +m
+            display: none !important
+    &-show
+        display: none !important
+        +m
+            display: block !important

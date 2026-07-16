@@ -1,0 +1,87 @@
+@import ../../../../styles/helpers
+
+.section
+    padding-bottom: 136px
+    border-bottom: 1px solid $n6
+    +d
+        margin-bottom: 80px
+        padding-bottom: 80px
+    +m
+        margin-bottom: 64px
+        padding-bottom: 64px
+    +dark
+        border-color: $n2
+
+.wrapper
+    display: flex
+    align-items: flex-start
+    +t
+        display: block
+
+.details
+    flex-grow: 1
+    padding-right: 48px
+    +t
+        margin-bottom: 48px
+        padding-right: 0
+
+.receipt
+    flex-shrink: 0
+    +m
+        margin: 0 -16px
+
+.btns
+    display: flex
+    margin-bottom: 32px
+    .button
+        &:first-child
+            flex-shrink: 0
+            margin-right: 8px
+        &:nth-child(2)
+            flex-grow: 1
+
+.table
+    margin-bottom: 32px
+
+.line
+    display: flex
+    padding: 8px 12px
+    &:last-child
+        background: $n7
+        border-radius: 8px
+        +dark
+            background: $n3
+        .cell
+            &:first-child
+                color: $n2
+                +dark
+                    color: $n8
+
+.cell
+    &:first-child
+        margin-right: auto
+        color: $n4
+    &:nth-child(2)
+        flex-shrink: 0
+        margin-left: 20px
+        text-align: right
+        font-weight: 500
+
+.foot
+    text-align: center
+
+.report
+    display: inline-flex
+    align-items: center
+    +poppins
+    +caption-2
+    color: $n4
+    transition: color .2s
+    svg
+        margin-right: 8px
+        fill: $n4
+        transition: fill .2s
+    &:hover
+        color: $p1
+        svg
+            fill: $p1

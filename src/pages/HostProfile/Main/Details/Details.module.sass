@@ -1,0 +1,39 @@
+@import ../../../../styles/helpers
+
+.title
+    margin-bottom: 24px
+    +body-bold-1
+   
+.content
+    margin-bottom: 24px
+    color: $n4
+
+.option
+    display: flex
+    align-items: flex-start
+    .text
+        font-weight: 500
+    &:not(:last-child)
+        margin-bottom: 20px
+
+.category
+    display: flex
+    align-items: center
+    flex-shrink: 0
+    width: 152px
+    padding-right: 24px
+    color: $n4
+    +m
+        width: 130px
+    svg
+        margin-right: 12px
+        fill: $n4
+
+.link
+    color: $p1
+    transition: color .2s
+    &:hover
+        color: darken($p1, 10)
+
+
+

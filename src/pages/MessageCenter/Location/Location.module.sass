@@ -1,0 +1,139 @@
+@import ../../../styles/helpers
+
+.location
+    padding: 48px 48px 48px 0
+    height: calc(100vh - 88px)
+    overflow: auto
+    -webkit-overflow-scrolling: touch
+    +x
+        padding: 32px 32px 32px 0
+
+.wrapper
+    border: 1px solid $n6
+    border-radius: 24px
+    +dark
+        border-color: $n3
+
+.preview
+    position: relative
+    padding: 3px
+    img
+        width: 100%
+        border-radius: 20px
+        +x
+            height: 300px
+            object-fit: cover
+    & > .button
+        position: absolute
+        top: 11px
+        right: 11px
+
+.body
+    padding: 40px 32px 24px
+    +x
+        padding: 32px 24px
+
+.title
+    margin-bottom: 12px
+    +body-bold-1
+
+.profile
+    display: flex
+    align-items: center
+    margin-bottom: 24px
+    span
+        margin-right: 4px
+        color: $n4
+
+.avatar
+    flex-shrink: 0
+    width: 24px
+    height: 24px
+    margin-right: 8px
+    img
+        width: 100%
+        height: 100%
+        border-radius: 50%
+        object-fit: cover
+
+.name
+    +body-bold-2
+
+.description
+    margin-bottom: 32px
+    padding: 8px
+    border-radius: 20px
+    background: $n7
+    +dark
+        background: $n2
+    &.flex
+        display: flex
+        flex-wrap: wrap
+        +x
+            display: block
+        .item
+            flex: 0 0 50%
+            &:nth-child(2n)
+                position: relative
+                &:before
+                    content: ""
+                    position: absolute
+                    top: 12px
+                    left: 0
+                    bottom: 12px
+                    width: 1px
+                    background: $n6
+                    +x
+                        top: 0
+                        right: 0
+                        bottom: auto
+                        width: auto
+                        height: 1px
+                    +dark
+                        background: $n3
+
+.item
+    display: flex
+    align-items: center
+    padding: 12px
+
+.icon
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 32px
+    height: 32px
+    margin-right: 12px
+    svg
+        fill: $n5
+    
+.category
+    +caption-2
+    color: $n4
+
+.subtitle
+    +body-bold-2
+   
+.parameters
+    display: flex
+    flex-wrap: wrap
+    margin: -10px 0 32px -16px
+
+.parameter
+    display: flex
+    align-items: center
+    margin: 10px 0 0 16px
+    color: $n4
+    svg
+        margin-right: 8px
+        fill: $n4
+
+.text
+    margin: 32px 0
+    padding-top: 32px
+    border-top: 1px solid $n6
+    color: $n4
+    +x
+        display: none
+    +dark
+        border-color: $n3

@@ -1,0 +1,82 @@
+@import ../../../styles/helpers
+
+.head
+    display: flex
+    align-items: center
+    +m
+        display: block
+
+.preview
+    flex-shrink: 0
+    width: 180px
+    height: 180px
+    margin-right: 24px
+    +m
+        width: 100%
+        height: 220px
+        margin: 0 0 24px
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 16px
+
+.title
+    margin-bottom: 8px
+    +body-bold-2
+
+.details
+    flex-grow: 1
+
+.author
+    display: flex
+    align-items: center
+    margin-bottom: 8px
+    .text
+        margin-right: 4px
+        +caption-2
+        color: $n4
+    
+.avatar
+    flex-shrink: 0
+    width: 24px
+    height: 24px
+    margin: 0 8px
+    img
+        width: 100%
+        height: 100%
+        border-radius: 50%
+        object-fit: cover
+
+.man
+    +caption-bold-2
+
+.parameter
+    display: inline
+    +caption-2
+    color: $n4
+    &:not(:first-child)
+        margin-left: 4px
+        &:before
+            content: "•"
+            margin-right: 4px
+
+.rating
+    display: flex
+    align-items: center
+    margin-top: 24px
+    padding-top: 24px
+    border-top: 1px solid $n6
+    +dark
+        border-color: $n2
+    svg
+        margin-right: 8px
+        fill: $s3
+    
+.number
+    font-weight: 500
+
+.reviews
+    margin-left: 8px
+    color: $n4
+
