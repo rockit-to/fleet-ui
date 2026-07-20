@@ -8,7 +8,7 @@ const CheckoutComplete = ({ className, title, parameters, options, items }) => {
   return (
     <div className={cn(className, styles.complete)}>
       <div className={styles.head}>
-        <div className={cn("h2", styles.title)}>congratulations!</div>
+        <div className={cn("h2", styles.title)}>Congratulations!!</div>
         <div className={styles.info}>
           Your trip has been booked!{" "}
           <span role="img" aria-label="firework">
